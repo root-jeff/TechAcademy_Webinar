@@ -222,7 +222,7 @@ async def save(self, user_data: UserCreate):
               fontWeight: 600,
             }}
           >
-            Backend Moderno con FastAPI
+            Backend Moderno con Flask
           </Typography>
         </Stack>
 
@@ -231,7 +231,7 @@ async def save(self, user_data: UserCreate):
           paragraph
           sx={{ mb: { xs: 2, sm: 3 } }}
         >
-          Un backend estructurado usando FastAPI (generado desde Swagger Editor)
+          Un backend estructurado usando Flask (generado desde Swagger Editor)
           sigue una arquitectura clara donde cada capa tiene responsabilidades
           específicas:
         </Typography>
@@ -364,7 +364,7 @@ async def save(self, user_data: UserCreate):
               fontSize: { xs: "1rem", sm: "1.25rem" },
             }}
           >
-            📁 Estructura Backend FastAPI:
+            📁 Estructura Backend Flask:
           </Typography>
           <Box
             component="pre"
@@ -726,7 +726,7 @@ async def save(self, user_data: UserCreate):
               fontWeight: 600,
             }}
           >
-            Mini Test: Arquitectura FastAPI
+            Mini Test: Arquitectura Flask
           </Typography>
         </Stack>
 
@@ -735,7 +735,7 @@ async def save(self, user_data: UserCreate):
           paragraph
           sx={{ mb: { xs: 1, sm: 2 } }}
         >
-          ¿En qué capa debería estar la lógica de negocio en FastAPI?
+          ¿En qué capa debería estar la lógica de negocio en Flask?
         </Typography>
 
         <RadioGroup
@@ -842,7 +842,7 @@ async def save(self, user_data: UserCreate):
           variant={isMobile ? "body2" : "body1"}
           sx={{ fontSize: { xs: "0.8rem", sm: "0.875rem" } }}
         >
-          <strong>Pro Tip:</strong> Usa dependency injection en FastAPI con{" "}
+          <strong>Pro Tip:</strong> Usa dependency injection en Flask con{" "}
           <Box
             component="code"
             sx={{

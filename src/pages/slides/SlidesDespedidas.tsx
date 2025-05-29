@@ -69,6 +69,11 @@ export default function SlideDespedida() {
           url: "https://docs.pytest.org/",
           icon: <Code />,
         },
+        {
+          nombre: "Flask Documentation",
+          url: "https://flask.palletsprojects.com/en/stable/",
+          icon: <Code />,
+        },
       ],
     },
     {
