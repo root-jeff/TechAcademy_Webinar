@@ -104,7 +104,6 @@ export default function SlideDespedida() {
   return (
     <Box
       sx={{
-
         mx: "auto",
       }}
     >
@@ -474,33 +473,39 @@ export default function SlideDespedida() {
           title="Descarga todos los recursos y ejemplos del taller"
           placement="top"
         >
-          <Button
-            variant="outlined"
-            size="large"
-            startIcon={<Download />}
-            sx={{
-              flex: 1,
-              py: { xs: 1.5, sm: 2 },
-              fontSize: { xs: "1rem", sm: "1.1rem" },
-              fontWeight: 600,
-              borderWidth: 2,
-              borderColor: theme.palette.primary.main,
-              color: theme.palette.primary.main,
-              "&:hover": {
-                borderWidth: 2,
-                backgroundColor: alpha(theme.palette.primary.main, 0.08),
-                borderColor: theme.palette.primary.dark,
-                color: theme.palette.primary.dark,
-                boxShadow: `0 8px 25px ${alpha(
-                  theme.palette.primary.main,
-                  0.25
-                )}`,
-                transform: "translateY(-2px)",
-              },
-            }}
+          <a
+            href="/guia-completa-xtrimup-tech-academy.pdf"
+            download
+            style={{ textDecoration: "none" }}
           >
-            Descargar guía completa
-          </Button>
+            <Button
+              variant="outlined"
+              size="large"
+              startIcon={<Download />}
+              sx={{
+                flex: 1,
+                py: { xs: 1.5, sm: 2 },
+                fontSize: { xs: "1rem", sm: "1.1rem" },
+                fontWeight: 600,
+                borderWidth: 2,
+                borderColor: theme.palette.primary.main,
+                color: theme.palette.primary.main,
+                "&:hover": {
+                  borderWidth: 2,
+                  backgroundColor: alpha(theme.palette.primary.main, 0.08),
+                  borderColor: theme.palette.primary.dark,
+                  color: theme.palette.primary.dark,
+                  boxShadow: `0 8px 25px ${alpha(
+                    theme.palette.primary.main,
+                    0.25
+                  )}`,
+                  transform: "translateY(-2px)",
+                },
+              }}
+            >
+              Descargar guía completa
+            </Button>
+          </a>
         </Tooltip>
       </Stack>
 
