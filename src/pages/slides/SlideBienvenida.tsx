@@ -513,11 +513,13 @@ export default function SlideBienvenida() {
                   "&::before": {
                     content: '"💡"',
                     position: "absolute",
-                    top: -15,
-                    left: 30,
-                    fontSize: "2rem",
-                    background: theme.palette.background.paper,
+                    top: 0,
+                    left: "1rem",
+                    transform: "translateY(-50%)",
+                    fontSize: { xs: "1.5rem", md: "2rem" },
+                    background: "transparent",
                     px: 1,
+                    zIndex: 1,
                   },
                 }}
               >

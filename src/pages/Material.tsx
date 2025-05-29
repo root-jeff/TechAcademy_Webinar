@@ -35,7 +35,7 @@ export default function Material() {
       title: "Repositorio con código de ejemplo",
       description:
         "Código fuente completo del webinar con ejemplos de Flask y Angular estructurados profesionalmente.",
-      url: "https://github.com/tuusuario/webinar-backend-colaborativo",
+      url: "https://github.com/root-jeff/TechAcademy_Webinar",
       type: "Código",
       color: theme.palette.primary.main,
     },

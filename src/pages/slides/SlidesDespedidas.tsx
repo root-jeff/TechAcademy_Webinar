@@ -39,11 +39,11 @@ import {
   Lightbulb,
   CalendarMonth,
 } from "@mui/icons-material";
+import GenerarCerficiadoComponent from "../../components/GenerarCertificado";
 
 export default function SlideDespedida() {
   const [expanded, setExpanded] = useState<any>(false);
   const theme = useTheme();
-  const isDarkMode = theme.palette.mode === "dark";
 
   const handleAccordionChange =
     (panel: any) => (_event: any, isExpanded: any) => {
@@ -449,26 +449,7 @@ export default function SlideDespedida() {
 
       {/* Botones de acción */}
       <Stack direction={{ xs: "column", sm: "row" }} spacing={3} sx={{ mb: 4 }}>
-        <Button
-          variant="contained"
-          size="large"
-          startIcon={<Home />}
-          sx={{
-            flex: 1,
-            py: { xs: 1.5, sm: 2 },
-            fontSize: { xs: "1rem", sm: "1.1rem" },
-            fontWeight: 600,
-            backgroundColor: theme.palette.primary.main,
-            color: theme.palette.primary.contrastText,
-            "&:hover": {
-              backgroundColor: theme.palette.primary.dark,
-              boxShadow: `0 8px 25px ${alpha(theme.palette.primary.main, 0.4)}`,
-              transform: "translateY(-2px)",
-            },
-          }}
-        >
-          Volver al inicio
-        </Button>
+        <GenerarCerficiadoComponent />
         <Tooltip
           title="Descarga todos los recursos y ejemplos del taller"
           placement="top"

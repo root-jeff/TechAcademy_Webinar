@@ -409,7 +409,7 @@ TOTAL                     120     15    88%
         >
           {[
             { id: "black", label: "Black" },
-            { id: "coverage", label: "Coverage.py + Jenkins ✅" },
+            { id: "coverage", label: "Coverage.py + Jenkins" },
             { id: "mypy", label: "MyPy" },
           ].map((option) => (
             <Button

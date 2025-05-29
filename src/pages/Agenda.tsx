@@ -22,7 +22,7 @@ export default function Agenda() {
   const agendaItems = [
     {
       time: "5 min",
-      title: "Introducción: qué veremos y por qué importa",
+      title: "Introducción: Qué veremos y por qué importa",
       description: "Contexto del webinar y objetivos de aprendizaje",
       icon: "🎯",
     },

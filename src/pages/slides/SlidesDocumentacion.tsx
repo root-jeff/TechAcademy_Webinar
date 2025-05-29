@@ -80,14 +80,99 @@ const SlideDocumentacion: React.FC = () => {
       icon: <FolderIcon />,
       description:
         "README, tutoriales internos, diagramas de arquitectura. Contexto del proyecto.",
+      example: {
+        title: "📘 Ejemplo README – Presentación React:",
+        code: `# 📊 Webinar Slides React – Del Caos al Código Limpio
+
+Presentación interactiva profesional desarrollada en React + Material UI para el webinar técnico **“Del Caos al Código Limpio”**, centrado en buenas prácticas de desarrollo backend en equipo.
+
+## 🎯 Objetivo
+
+Enseñar cómo estructurar código de forma profesional, documentarlo correctamente y aplicar pruebas unitarias efectivas en proyectos colaborativos, usando un stack moderno.
+
+## 🧰 Tecnologías utilizadas
+
+- ⚛️ React + TypeScript
+- 🎨 Material UI (MUI)
+- 📁 Componentes modulares
+- 🌗 Soporte para dark/light theme
+- 🧪 Buenas prácticas para Flask, Pytest, Angular, Docker, Jira
+
+## 🚀 Instalación
+
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+
+## 📂 Estructura del proyecto
+
+\`\`\`
+┣ 📂assets
+┣ 📂pages
+┃ ┣ 📂slides
+┃ ┃ ┣ 📜SlideBienvenida.tsx
+┃ ┃ ┣ 📜SlideEstructura.tsx
+┃ ┃ ┣ 📜SlidesDespedidas.tsx
+┃ ┃ ┣ 📜SlidesDocumentacion.tsx
+┃ ┃ ┣ 📜SlidesHerramientas.tsx
+┃ ┃ ┗ 📜SlidesPrueba.tsx
+┣ 📂theme
+┣ 📜App.tsx
+┣ 📜main.tsx
+\`\`\`
+
+## 💡 Contenido de cada diapositiva
+
+✅ Títulos claros  
+✅ Texto explicativo  
+✅ Código real  
+✅ Interacción MUI  
+✅ Tips para devs
+
+## 📦 Próximos pasos
+
+- [ ] Navegación entre slides
+- [ ] Modo oscuro completo
+- [ ] Pruebas automáticas
+
+## 🙌 Autor
+
+**Jefferson Palma**  
+Backend Developer @ Xtrim  
+Creador del webinar **Del Caos al Código Limpio**
+
+## 📽️ Disponible en: XtrimUP Tech Academy 🎓`,
+      },
       items: [
         "Descripción del proyecto",
         "Instalación y configuración",
         "Ejemplos de uso",
         "Estructura de carpetas",
         "Cómo contribuir",
+        "",
+        "📦 Tools-Integrated-MS",
+        "Valida correos electrónicos, detecta errores y corrige dominios.",
+        "",
+        "**Estructura del proyecto:**",
+        "├── swagger_server/",
+        "│   ├── controllers/",
+        "│   ├── models/",
+        "│   ├── utils/",
+        "│   ├── uses_cases/",
+        "│   └── swagger/",
+        "",
+        "**Endpoints:**",
+        "GET /validate-email",
+        "Parámetros: email (string)",
+        "",
+        "**Respuestas posibles:**",
+        "✅ 200: Correo válido",
+        "⚠️ 401: Dominio corregido",
+        "❌ 402–405: Problemas (MX, blacklist, inexistente, etc.)",
       ],
     },
+
     {
       id: "api",
       title: "Documentación de consumo de API",
